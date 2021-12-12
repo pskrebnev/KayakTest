@@ -28,6 +28,9 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
+# Allure
+.allure/**
+
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
