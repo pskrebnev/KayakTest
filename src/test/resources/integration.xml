@@ -2,7 +2,7 @@
 <suite name="IntegrationTest" verbose="1">
     <test name="Integration">
         <classes>
-            <class name="com.kayaktest.selenium.AnotherTest"/>
+            <class name="com.kayaktest.selenium.AnotherPage"/>
         </classes>
     </test>
 </suite>

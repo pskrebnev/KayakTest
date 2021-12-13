@@ -8,11 +8,11 @@ import java.util.Properties;
 
 public class PropertyKeys {
 
-    private Properties properties;
-    private final String browserPropertyFilePath = "src/test/resources/browser.properties";
+    public final Properties properties;
 
     public PropertyKeys(){
         BufferedReader reader;
+        String browserPropertyFilePath = "src/test/resources/browser.properties";
         try {
             reader = new BufferedReader(new FileReader (browserPropertyFilePath));
             properties = new Properties();
@@ -33,5 +33,9 @@ public class PropertyKeys {
         String url = properties.getProperty("base.url");
         if(url != null) return url;
         else throw new RuntimeException("url is not specified");
+    }
+
+    public Integer getBrowserWait() {
+        return Integer.valueOf (properties.getProperty ("base.wait"));
     }
 }
