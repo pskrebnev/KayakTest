@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="IntegrationTest" verbose="1">
+    <test name="Integration">
+        <classes>
+            <class name="com.kayaktest.selenium.AnotherTest"/>
+        </classes>
+    </test>
+</suite>
+

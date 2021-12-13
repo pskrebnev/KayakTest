@@ -30,6 +30,8 @@ dependencies {
 test {
     ignoreFailures = true
     useTestNG {
+        if (project.hasProperty('Smoke')) { suites 'src/test/resources/smoke.xml' }
+        if (project.hasProperty('Integration')) { suites 'src/test/resources/integration.xml' }
     }
 }
 
